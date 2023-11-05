@@ -1,0 +1,30 @@
+package hu.bme.mit.mdsd.erdiagram.queries
+
+// The following imports the ecore model,
+// you can use auto-completion by hitting ctrl+space after the quotation mark
+import "hu.bme.mit.mdsd.erdiagram"
+
+pattern entity(e : Entity) {
+    Entity(e);
+}
+
+pattern entityName(entity : Entity, name) {
+    Entity.name(entity, name);
+}
+
+pattern unnamedElement(element : NamedElement) {
+	NamedElement.name(element, "");
+} or {
+	neg NamedElement.name(element, _);
+}
+
+pattern entityStartsWithLowerCase(entity) {
+	Entity.name(entity, name);
+	check (!name.matches("^[A-Z].+"));
+}
+
+pattern entityNameAmbiguity(entity1, entity2, commonName) {
+	Entity.name(entity1, commonName);
+	Entity.name(entity2, commonName);
+	entity1!=entity2;
+}
