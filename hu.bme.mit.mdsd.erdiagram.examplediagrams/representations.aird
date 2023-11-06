@@ -5,6 +5,7 @@
     <semanticResources>platform:/resource/hu.bme.mit.mdsd.rdb.design/description/rdb.odesign</semanticResources>
     <semanticResources>environment:/viewpoint</semanticResources>
     <semanticResources>My.trace</semanticResources>
+    <semanticResources>My.rdb</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_qB-8cECfEeivdP576tSASg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/hu.bme.mit.mdsd.erdiagram.design/description/erdiagram.odesign#//@ownedViewpoints[name='erdiagram']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_qaPEYECfEeivdP576tSASg" name="source EntityRelationDiagram" repPath="#_qaFTYECfEeivdP576tSASg">

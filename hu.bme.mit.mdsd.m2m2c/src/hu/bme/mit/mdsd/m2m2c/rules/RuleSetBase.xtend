@@ -43,7 +43,7 @@ class RuleSetBase {
 	}
 	
 	private def logExecution(IPatternMatch match, String ruleName) {
-		println('''Â«ruleNameÂ» (Â«match.prettyPrintÂ»)''')
+		println('''«ruleName» («match.prettyPrint»)''')
 	}
 	protected def <Match extends IPatternMatch, Matcher extends ViatraQueryMatcher<Match>> addRule(
 		IQuerySpecification<Matcher> query, Consumer<Match> job

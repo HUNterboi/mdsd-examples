@@ -30,5 +30,5 @@ class CommonHelperMethods {
 	}
 	
 	static def String toKeyColumnName(String entityName) 
-		'''Â«entityNameÂ»_ID'''
+		'''«entityName»_ID'''
 }
